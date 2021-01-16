@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
                 final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 //if user is logged in, move onto next pg
                 if (user != null){
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, LogDreamPage.class);
                     startActivity(intent);
                     finish();
                     return;
