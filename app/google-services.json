@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "872384627885",
+    "project_id": "dream-sbhacks",
+    "storage_bucket": "dream-sbhacks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872384627885:android:0860471207a2dbad9bb224",
+        "android_client_info": {
+          "package_name": "com.example.dream_sbhacks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "872384627885-56v1fg8h64j5ij0bg0lcddopf2v82h7i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dream_sbhacks",
+            "certificate_hash": "f12433c9baa1141e6bf88ffb35636b3557e4b68d"
+          }
+        },
+        {
+          "client_id": "872384627885-fcvd5tdpva4pvu047pitna7igjvb47b3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRbuzp015PzXgdQoIswipifCQaH66QTew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "872384627885-fcvd5tdpva4pvu047pitna7igjvb47b3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
