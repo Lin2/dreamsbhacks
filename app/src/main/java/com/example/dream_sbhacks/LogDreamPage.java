@@ -1,6 +1,7 @@
 package com.example.dream_sbhacks;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -22,6 +23,7 @@ public class LogDreamPage extends AppCompatActivity {
     private ArrayAdapter<String> itemsAdapter;
     private ListView listView;
     private Button button;
+    private Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +32,17 @@ public class LogDreamPage extends AppCompatActivity {
 
         listView = findViewById(R.id.listView);
         button = findViewById(R.id.button);
-
+        button2 = findViewById(R.id.button2);
+        // if click "explore dreams", goes to swiping
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LogDreamPage.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        //adding new dreams
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
