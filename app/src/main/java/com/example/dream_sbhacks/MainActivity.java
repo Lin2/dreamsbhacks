@@ -1,9 +1,11 @@
 package com.example.dream_sbhacks;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.auth.FirebaseAuth;
 import com.lorentzos.flingswipe.SwipeFlingAdapterView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<String> al;
     private ArrayAdapter<String> arrayAdapter;
     private int i;
+
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,5 +97,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void logoutUser(View view){
+        mAuth.signOut();
+        Intent intent = new Intent (MainActivity.this, ChooseLoginorRegistrationActivity.class);
+        finish();
+        return;
     }
 }
