@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mAuth = FirebaseAuth.getInstance();
         availableMatches();
 
         al = new ArrayList<>();
@@ -94,13 +95,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void availableMatches(){
+        String userId = mAuth.getCurrentUser().getUid();
         DatabaseReference userDb = FirebaseDatabase.getInstance().getReference().child("Users");
         userDb.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-             al.add(snapshot.child("name").getValue().toString());
-             arrayAdapter.notifyDataSetChanged();
-            }
+                if (snapshot.exists())
+                {
+                    if (!snapshot.getKey().equals(userId)){
+                        al.add(snapshot.child("name").getValue().toString());
+                        arrayAdapter.notifyDataSetChanged();}
+                    }
+                }
+
 
             @Override
             public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
