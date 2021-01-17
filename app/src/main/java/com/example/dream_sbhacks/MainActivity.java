@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                     Collections.sort(al, new Comparator<String>() {
                         @Override
                         public int compare(String o1, String o2) {
-                            System.out.println(curDream + ": " + o1 + ": " + o2 + ": " + (stringComp(o1, curDream) - stringComp(o2, curDream)));
+                           // System.out.println(curDream + ": " + o1 + ": " + o2 + ": " + (stringComp(o1, curDream) - stringComp(o2, curDream)));
                             return (int)(10 * (stringComp(o2, curDream) - stringComp(o1, curDream)));
                         }
                     });
