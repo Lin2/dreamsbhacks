@@ -37,7 +37,6 @@ public class LoginActivity extends AppCompatActivity {
                 if (user != null){
                     Intent intent = new Intent(LoginActivity.this, LogDreamPage.class);
                     startActivity(intent);
-                    finish();
                     return;
                 }
             }
