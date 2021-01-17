@@ -6,6 +6,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -16,6 +17,8 @@ public class ChooseLoginorRegistrationActivity extends AppCompatActivity {
     TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getActionBar().hide();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_loginor_registration);
 
