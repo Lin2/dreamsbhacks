@@ -59,11 +59,11 @@ public class RegistrationActivity extends AppCompatActivity {
         mRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int selectId = mRadioGroup.getCheckedRadioButtonId();
-                final RadioButton radioButton = (RadioButton) findViewById(selectId);
-                if(radioButton.getText() == null){
-                    return;
-                }
+                //int selectId = mRadioGroup.getCheckedRadioButtonId();
+                //final RadioButton radioButton = (RadioButton) findViewById(selectId);
+                //if(radioButton.getText() == null){
+                  //  return;
+                //}
 
                 //get email and pass, create user
                 final String email = mEmail.getText().toString();
@@ -78,7 +78,7 @@ public class RegistrationActivity extends AppCompatActivity {
                         }
                         else{
                             String userId = mAuth.getCurrentUser().getUid();
-                            DatabaseReference currentUserDb = FirebaseDatabase.getInstance().getReference().child("Users").child(radioButton.getText().toString()).child(userId).child("name");
+                            DatabaseReference currentUserDb = FirebaseDatabase.getInstance().getReference().child("Users").child(userId).child("name");
                             currentUserDb.setValue(name);
                         }
                     }
