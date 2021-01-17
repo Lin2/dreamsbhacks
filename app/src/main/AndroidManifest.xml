@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Dreamsbhacks">
+        <activity android:name=".Tutorial"></activity>
         <activity
             android:name=".LogDreamPage"
             android:label="@string/title_activity_log_dream_page"
-            android:theme="@style/Theme.Dreamsbhacks.NoActionBar"></activity>
+            android:theme="@style/Theme.Dreamsbhacks.NoActionBar" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".MainActivity" />

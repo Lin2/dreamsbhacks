@@ -41,7 +41,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 //if user is logged in, move onto next pg
                 if (user != null){
                     //Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
-                    Intent intent = new Intent(RegistrationActivity.this, LogDreamPage.class);
+                    Intent intent = new Intent(RegistrationActivity.this, Tutorial.class);
                     startActivity(intent);
                     return;
                 }
