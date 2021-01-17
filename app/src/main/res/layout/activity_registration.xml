@@ -14,16 +14,49 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/radioGroup"
+        android:id="@+id/radioGroup1"
+        android:paddingBottom="15dp"
         >
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Male" />
+            android:text="Early Bird" />
         <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Female" />
+        android:text="Night Owl" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup2"
+        android:paddingBottom="15dp"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light Sleeper" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heavy Sleeper"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup3"
+        android:paddingBottom="15dp"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frequent Dreamer" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sparse Dreamer" />
     </RadioGroup>
     <EditText
         android:layout_width="match_parent"

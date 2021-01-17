@@ -54,7 +54,7 @@ public class RegistrationActivity extends AppCompatActivity {
         mEmail = (EditText) findViewById(R.id.email);
         mPassword = (EditText) findViewById(R.id.password);
         mName = (EditText) findViewById(R.id.name);
-        mRadioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        mRadioGroup = (RadioGroup) findViewById(R.id.radioGroup1);
 
         mRegister.setOnClickListener(new View.OnClickListener() {
             @Override
