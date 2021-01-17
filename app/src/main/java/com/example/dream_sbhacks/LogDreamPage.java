@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.view.View;
@@ -18,7 +21,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class LogDreamPage extends AppCompatActivity {
-
+    private DatabaseReference mDatabase;
     private ArrayList<String> items;
     private ArrayAdapter<String> itemsAdapter;
     private ListView listView;
@@ -30,6 +33,7 @@ public class LogDreamPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_dream_page);
 
+        mDatabase = FirebaseDatabase.getInstance().getReference();
         listView = findViewById(R.id.listView);
         button = findViewById(R.id.button);
         button2 = findViewById(R.id.button2);
