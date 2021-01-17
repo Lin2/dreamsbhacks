@@ -17,7 +17,6 @@ public class ChooseLoginorRegistrationActivity extends AppCompatActivity {
     TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        getActionBar().hide();
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_loginor_registration);

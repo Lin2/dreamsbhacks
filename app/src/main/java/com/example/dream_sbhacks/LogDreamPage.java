@@ -41,6 +41,7 @@ public class LogDreamPage extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
+
         });
         //adding new dreams
         button.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +54,7 @@ public class LogDreamPage extends AppCompatActivity {
         itemsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
         listView.setAdapter(itemsAdapter);
         setUpListViewListener();
+
     }
 
     private void setUpListViewListener() {
