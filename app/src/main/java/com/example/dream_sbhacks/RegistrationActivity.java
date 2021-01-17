@@ -43,7 +43,6 @@ public class RegistrationActivity extends AppCompatActivity {
                     //Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
                     Intent intent = new Intent(RegistrationActivity.this, LogDreamPage.class);
                     startActivity(intent);
-                    finish();
                     return;
                 }
             }
